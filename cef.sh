@@ -3,8 +3,8 @@
 
 ##install and apply the CEF collector
 yum update
-wget -O cef_installer.py https://remotestatessa.blob.core.windows.net/customlogs/cef_installer.py
+wget -O cef_installer.py https://raw.githubusercontent.com/schoonercg/azuretools/master/cef_installer.py
 python3 cef_installer.py $1 $2
 ##Changing the source of the TimeGenerated field
-wget -O TimeGeneratedG.py https://remotestatessa.blob.core.windows.net/customlogs/Time_GeneratedG.py
+wget -O TimeGeneratedG.py https://raw.githubusercontent.com/schoonercg/azuretools/master/Time_GeneratedG.py
 python3 TimeGeneratedG.py $1
