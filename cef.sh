@@ -2,7 +2,7 @@
 #sh InstallDependencyAgent-Linux64.bin -s
 
 ##install and apply the CEF collector
-apt-get update
+yum update
 wget -O cef_installer.py https://remotestatessa.blob.core.windows.net/customlogs/cef_installer.py
 python3 cef_installer.py $1 $2
 ##Changing the source of the TimeGenerated field
