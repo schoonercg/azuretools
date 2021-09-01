@@ -2,7 +2,7 @@
 #sh InstallDependencyAgent-Linux64.bin -s
 
 ##install and apply the CEF collector
-yum update
+yum update -y
 sudo setenforce 0
 wget -O prepare_vm_disks.sh https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/prepare_vm_disks.sh
 prepare_vm_disks.sh
