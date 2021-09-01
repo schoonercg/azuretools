@@ -6,7 +6,7 @@ yum update -y
 sudo setenforce 0
 wget -O prepare_vm_disks.sh https://raw.githubusercontent.com/schoonercg/azuretools/master/prepare_vm_disks.sh
 sudo chmod +x ./prepare_vm_disks.sh
-prepare_vm_disks.sh
+sudo ./prepare_vm_disks.sh
 wget -O cef_installer.py https://raw.githubusercontent.com/schoonercg/azuretools/master/cef_installer.py
 python3 cef_installer.py $1 $2
 ##Changing the source of the TimeGenerated field
