@@ -31,7 +31,7 @@
 
 
 # Base path for data disk mount points
-DATA_BASE="/"
+DATA_BASE=""
 # Mount options for data disk
 MOUNT_OPTIONS="noatime,nodiratime,nodev,noexec,nosuid,nofail"
 
@@ -83,7 +83,7 @@ scan_for_new_disks() {
 }
 
 get_next_mountpoint() {
-    DIRS=$(ls -1d ${DATA_BASE}opt* 2>/dev/null| sort --version-sort)
+    DIRS=$(ls -1d ${DATA_BASE}/opt* 2>/dev/null| sort --version-sort)
     MAX=$(echo "${DIRS}"|tail -n 1 | tr -d "[a-zA-Z/]")
     if [ -z "${MAX}" ];
     then
