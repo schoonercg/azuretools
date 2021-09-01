@@ -4,7 +4,7 @@
 ##install and apply the CEF collector
 yum update -y
 sudo setenforce 0
-wget -O prepare_vm_disks.sh https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/prepare_vm_disks.sh
+wget -O prepare_vm_disks.sh https://raw.githubusercontent.com/schoonercg/azuretools/master/prepare_vm_disks.sh
 prepare_vm_disks.sh
 wget -O cef_installer.py https://raw.githubusercontent.com/schoonercg/azuretools/master/cef_installer.py
 python3 cef_installer.py $1 $2
