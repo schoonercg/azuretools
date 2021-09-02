@@ -5,6 +5,7 @@
 ##install and apply the CEF collector
 yum update -y
 sudo setenforce 0
+sudo sed -i 's/enforcing/permissive/g' /etc/selinux/config
 wget -O prepare_vm_disks.sh https://raw.githubusercontent.com/schoonercg/azuretools/master/prepare_vm_disks.sh
 sudo chmod +x ./prepare_vm_disks.sh
 sudo ./prepare_vm_disks.sh
