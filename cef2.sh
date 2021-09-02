@@ -12,3 +12,7 @@ python3 cef_installer.py $1 $2
 ##Changing the source of the TimeGenerated field
 wget -O TimeGeneratedG.py https://raw.githubusercontent.com/schoonercg/azuretools/master/Time_GeneratedG.py
 python3 TimeGeneratedG.py $1
+sudo sed -i '46 s/^/#/' rsyslog.conf
+sudo sed -i '49 s/^/#/' rsyslog.conf
+sudo sed -i '52 s/^/#/' rsyslog.conf
+sudo sed -i '65 s/^/#/' rsyslog.conf
