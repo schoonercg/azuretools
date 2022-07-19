@@ -21,4 +21,4 @@ sudo sed -i '65 s/^/#/' /etc/rsyslog.conf
 sudo firewall-cmd --permanent --zone=public --add-port=514/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=514/udp
 sudo firewall-cmd --reload
-sudo  echo "20.150.88.164 umsa1lrz1kjtffpvkh5s.blob.core.windows.net" >> /etc/hosts
+sudo  echo "20.150.88.164 *.blob.core.windows.net" >> /etc/hosts
