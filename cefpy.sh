@@ -1,8 +1,8 @@
 #wget https://aka.ms/dependencyagentlinux
 #sh InstallDependencyAgent-Linux64.bin -s
 ##install and apply the CEF collector
-yum update -y
-yum install -y python2
+sudo yum update -y
+sudo yum install -y python2
 sudo update-alternatives --remove-all python
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1
 sudo setenforce 0
@@ -21,4 +21,3 @@ sudo sed -i '65 s/^/#/' /etc/rsyslog.conf
 sudo firewall-cmd --permanent --zone=public --add-port=514/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=514/udp
 sudo firewall-cmd --reload
-sudo  echo "20.150.88.164 *.blob.core.windows.net" >> /etc/hosts
