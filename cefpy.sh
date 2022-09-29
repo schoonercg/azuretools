@@ -21,3 +21,5 @@ sudo sed -i '65 s/^/#/' /etc/rsyslog.conf
 sudo firewall-cmd --permanent --zone=public --add-port=514/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=514/udp
 sudo firewall-cmd --reload
+sudo sleep 90s
+sudo echo "slept and output"
