@@ -21,6 +21,6 @@ sudo sed -i '65 s/^/#/' /etc/rsyslog.conf
 sudo firewall-cmd --permanent --zone=public --add-port=514/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=514/udp
 sudo firewall-cmd --reload
-sudo sleep 60s
+#sudo sleep 60s
 sudo rm /var/lib/waagent/Microsoft.Azure.Diagnostics.LinuxDiagnostic-4.1.6/DistroSpecific.py
 sudo wget https://raw.githubusercontent.com/Azure/azure-linux-extensions/master/Diagnostic/DistroSpecific.py /var/lib/waagent/Microsoft.Azure.Diagnostics.LinuxDiagnostic-4.1.6/DistroSpecific.py
