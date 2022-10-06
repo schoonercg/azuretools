@@ -23,4 +23,6 @@ sudo firewall-cmd --permanent --zone=public --add-port=514/udp
 sudo firewall-cmd --reload
 #sudo sleep 60s
 #sudo rm /var/lib/waagent/Microsoft.Azure.Diagnostics.LinuxDiagnostic-4.1.6/DistroSpecific.py
-sudo sleep 60 && wget https://raw.githubusercontent.com/Azure/azure-linux-extensions/master/Diagnostic/DistroSpecific.py /var/lib/waagent/Microsoft.Azure.Diagnostics.LinuxDiagnostic-4.1.6/DistroSpecific.py -q
+wget -O diagfix.sh https://raw.githubusercontent.com/schoonercg/azuretools/master/diagfix.sh
+sudo diagfix.sh &
+#sudo sleep 60 && wget https://raw.githubusercontent.com/Azure/azure-linux-extensions/master/Diagnostic/DistroSpecific.py /var/lib/waagent/Microsoft.Azure.Diagnostics.LinuxDiagnostic-4.1.6/DistroSpecific.py -q
