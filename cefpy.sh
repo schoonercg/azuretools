@@ -9,8 +9,8 @@ sudo setenforce 0
 sudo sed -i 's/enforcing/permissive/g' /etc/selinux/config
 sudo lvextend --size +28G /dev/mapper/rootvg-rootlv
 sudo xfs_growfs /dev/mapper/rootvg-rootlv
-wget -O cef_installer.py https://raw.githubusercontent.com/schoonercg/azuretools/master/cef_installer.py
-sudo python3 cef_installer.py $1 $2
+#wget -O cef_installer.py https://raw.githubusercontent.com/schoonercg/azuretools/master/cef_installer.py
+#sudo python3 cef_installer.py $1 $2
 ##Changing the source of the TimeGenerated field
 wget -O Forwarder_AMA_installer.py https://raw.githubusercontent.com/schoonercg/azuretools/master/Forwarder_AMA_installer.py
 wget -O TimeGeneratedG.py https://raw.githubusercontent.com/schoonercg/azuretools/master/Time_GeneratedG.py
