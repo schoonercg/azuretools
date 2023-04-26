@@ -20,9 +20,9 @@ sudo python3 Forwarder_AMA_installer.py
 #sudo sed -i '49 s/^/#/' /etc/rsyslog.conf
 #sudo sed -i '52 s/^/#/' /etc/rsyslog.conf
 #sudo sed -i '65 s/^/#/' /etc/rsyslog.conf
-sudo firewall-cmd --permanent --zone=public --add-port=514/tcp
-sudo firewall-cmd --permanent --zone=public --add-port=514/udp
-sudo firewall-cmd --reload
+#sudo firewall-cmd --permanent --zone=public --add-port=514/tcp
+#sudo firewall-cmd --permanent --zone=public --add-port=514/udp
+#sudo firewall-cmd --reload
 #sudo sleep 60s
 #sudo rm /var/lib/waagent/Microsoft.Azure.Diagnostics.LinuxDiagnostic-4.1.6/DistroSpecific.py
 #wget -O diagfix.sh https://raw.githubusercontent.com/schoonercg/azuretools/master/diagfix.sh
