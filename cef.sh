@@ -20,6 +20,7 @@ sudo sed -i '46 s/^/#/' /etc/rsyslog.conf
 sudo sed -i '49 s/^/#/' /etc/rsyslog.conf
 sudo sed -i '52 s/^/#/' /etc/rsyslog.conf
 sudo sed -i '65 s/^/#/' /etc/rsyslog.conf
+sudo systemctl restart rsyslog
 sudo firewall-cmd --permanent --zone=public --add-port=514/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=514/udp
 sudo firewall-cmd --reload
